@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Azienda Bassani | Vinhos Vinos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image" href="/img/ablogo_Qgh_12.ico"/>
+        <link rel="stylesheet" href="/css/standard.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+                    <script>
+                        function initialize() {
+                            var mapCanvas = document.getElementById('map');
+                            var mapOptions = {
+                                center: new google.maps.LatLng(-28.881904, -51.684210),
+                                zoom: 18,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            }
+                            var myCenter=new google.maps.LatLng(-28.881904, -51.684210);
+                            var map = new google.maps.Map(mapCanvas, mapOptions)
+                            var marker=new google.maps.Marker({
+                                position:myCenter,
+                            });
+                            
+                            var contentString = '<em><strong>AZIENDA BASSANI - Vinhos Finos</em></strong><br>';
+                            contentString += 'Visconde de Pelotas, 1528<br>'
+                            contentString += 'Fagundes Varela, RS<br>';
+                            contentString += 'Serra Gaucha';
+                            
+                            var infowindow = new google.maps.InfoWindow({
+                                content: contentString
+                            });
+
+                            var marker=new google.maps.Marker({
+                                position:myCenter,
+                                map: map
+                            });
+                            
+                            marker.addListener('click', function() {
+                                infowindow.open(map, marker);
+                            });
+
+                            marker.setMap(map);
+                        }
+                        google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+    </head>
+    <body>
+    <header>
+    <div id='checkout-banner'>
+        <div class='container'>
+            <a href='/cart' class='checkout'>
+                <span class='text'>Carrinho </span>
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+            <a href="/login">Login</a>
+            <a href="/register">Registrar</a>
+        </div>
+    </div>
+    <div class="site-header-main">
+        <h1 class="site-title">
+            <a href="#" rel="home">
+                <img src="/img/coollogo_com-30719684.png" alt="Vinicula Bassini">
+            </a>
+        </h1>
+        <div id="site-header-menu" class="site-header-menu">
+            <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+                <div class="menu-main-container">
+                    <ul id="menu-main" class="primary-menu">
+                        <li>
+                            <a href="/root/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/root/store.html">Loja</a>
+                        </li>
+                        <li>
+                            <a href="/root/about.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="/root/contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav><!-- .main-navigation -->
+        </div><!-- .site-header-menu -->
+    </div>
+        <div id="contact-main" class="contact-main">
+            <div class="post-content section-inner">
+                <section class="main-content">
+                    <div id="wrapper">
+                       <div class="google_map"></div>
+                        <div id="map"></div>
+                        <div class="contact-text">
+                            <h3>Contato</h3>
+                            <ul class="contact-info">
+                                <div class="cn">Vinicola Bassani Ltda.<br>Linha Visconde de Pelotas, 1528<br>Fagundes Varela, RS - Brasil<br>Cep: 95333-000<br>
+                                    <li class="phone"><a href="tel:+555434451057">0 xx 54 3445-1057</a></li>
+                                    <li class="whatsapp"><a href="tel:+5554xxxxxxxx">+55 54 xxxxxx</a></li>
+                                    <li class="mail"><a href="mailto:vinicola@aziendabassani.com.br">vinicola@aziendabassani.com.br</a></li>
+                                </div>
+                                <h3>Horario de Atendimento</h3>
+                                <div calss="opening">&nbsp;Seg-Sex 8:00 - 18:00</div>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>   
+    <footer>
+      <ul>
+        <li><a href="#" target="_blank" class="social facebook">Facebook</a></li>
+        <li><a href="#" target="_blank" class="social linkedin">LinkedIn</a></li>
+        <li><a href="#" target="_blank" class="social instagram">Instagram</a></li>
+      </ul>
+      <p class="copyright">&copy;Vinicula Bassani 2017. All rights reserved.</p>
+    </footer>
+    
+    </body>
+    
+</html>
+    

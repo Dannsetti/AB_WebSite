@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Azienda Bassani | Vinhos Vinos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image" href="/img/ablogo_Qgh_12.ico"/>
+        <link rel="stylesheet" href="/css/standard.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+    <div id='checkout-banner'>
+        <div class='container'>
+            <a href='/cart' class='checkout'>
+                <span class='text'>Carrinho </span>
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+            <a href="/login">Login</a>
+            <a href="/register">Registrar</a>
+        </div>
+    </div>
+    <div class="site-header-main">
+        <h1 class="site-title">
+            <a href="#" rel="home">
+                <img src="/img/coollogo_com-30719684.png" alt="Vinicula Bassini">
+            </a>
+        </h1>
+        <div id="site-header-menu" class="site-header-menu">
+            <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+                <div class="menu-main-container">
+                    <ul id="menu-main" class="primary-menu">
+                        <li>
+                            <a href="/root/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/root/store.html">Loja</a>
+                        </li>
+                        <li>
+                            <a href="/root/about.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="/root/contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav><!-- .main-navigation -->
+        </div><!-- .site-header-menu -->
+    </div>
+        <div id="about-main" class="about-main">
+            <!-- /post-header section -->
+            <div class="post-content section-inner">
+                <section class="main-content">
+                    <h1 class="title">História</h1>
+                    <h2 class="comapny-name">
+                        <p>Azienda Bassani - Vinhos Finos </p>
+                    </h2>
+                    <div class="h-content">
+                        <h3>Quem somos</h3>
+                        <p>A vinda da familia Bassani ao Brasil deu-se no final do século XIX, oriunda de uma pequena localidade chamada Rocca,  no município de Arsiè, província de Belluno, Região do Vêneto na Itália.  Instalaram-se nas proximidades do Rio Carreiro, na antiga Bella Vista, hoje município de Fagundes Varela. O cultivo de parreirais com mudas trazidas da terra natal, tornou-se sua principal fonte de sustento.</p>
+                        <p>Cento e trinta anos depois descendentes desta família, voltam a investir em parreirais, novamente com mudas de alta qualidade trazidas da Itália. Em 2005, surge a Vinícola Bassani Ltda com a filosofia de elaborar produções limitadas com qualidade superior, utilizando trabalho criterioso desde o plantio, manejo, colheita no ponto ideal de maturação, com  seleção de uvas visando obter matéria prima de alta qualidade, com o objetivo de obter vinhos de  qualidade superior, para garantir a satisfação dos mais exigentes paladares</p>
+                    </div>
+                    <div class="pictures">
+                        <div class="responsive">
+                            <div class="img">
+                                <img src="/img/070122162852mapa2b.gif" alt="mapa cidade" width="300" height="200">
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <img src="/img/070122193552DSC_0011.jpg" alt="Fermentacao do vinho" width="300" height="200">
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <img src="/img/070122193907DSC_0026.jpg" alt="Vinhos cellar" width="300" height="200">
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <img src="/img/070122194520DSC_0039.jpg" alt="Campo de paltacao - Parreral" width="300" height="200">
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <img src="/img/070215103137Fotoportico.jpg" alt="Portal de Fagundes Varela" width="300" height="200">
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <img src="/img/070124111951070122154244mapa.gif" alt="Mapa serra gaucha" width="300" height="200">
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <img src="/img/070215103212espaldeira.jpg" alt="Plantacao parreral" width="300" height="200">
+                            </div>
+                        </div>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">×</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('myModal');
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() { 
+                                modal.style.display = "none";
+                            }
+                            // Get all images and insert the clicked image inside the modal
+                            // Get the content of the image description and insert it inside the modal image caption
+                            var images = document.getElementsByTagName('img');
+                            var modalImg = document.getElementById("img01");
+                            var captionText = document.getElementById("caption");
+                            var i;
+                            for (i = 0; i < images.length; i++) {
+                                images[i].onclick = function(){
+                                    modal.style.display = "block";
+                                    modalImg.src = this.src;
+                                    modalImg.alt = this.alt;
+                                    captionText.innerHTML = this.nextElementSibling.innerHTML;
+                                }
+                            }
+                        </script>
+                    </div>
+                    <div class="contact-link">
+                        <p><a href="/root/contact.html">Entre em contato</a><strong> para saber mais informações de produtos, e para saber como se tornar um representante. </strong>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </header>    
+        <footer>
+            <ul>
+                <li><a href="#" target="_blank" class="social facebook">Facebook</a></li>
+                <li><a href="#" target="_blank" class="social linkedin">LinkedIn</a></li>
+            <li><a href="#" target="_blank" class="social instagram">Instagram</a></li>
+        </ul>
+            <p class="copyright">&copy;Vinicula Bassani 2017. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
